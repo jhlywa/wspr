@@ -13,6 +13,11 @@ Only Type 1 WSPR messages are supported.
 
 The WSPR crate is `no_std` by default.
 
+### Optional Features
+
+The `wspr` crate provides the following optional Cargo features:
+  - `defmt-03`: Implements `defmt::Format` for `wspr::Error`
+
 ### Example
 
 ```rust
