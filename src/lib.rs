@@ -1,4 +1,6 @@
-/// References: [1] http://g4jnt.com/WSPR_Coding_Process.pdf
+// References: [1] http://g4jnt.com/WSPR_Coding_Process.pdf
+
+#![no_std]
 
 #[derive(Debug, PartialEq)]
 pub enum Error {
