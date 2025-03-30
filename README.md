@@ -1,4 +1,4 @@
-# WSPR
+### WSPR
 
 WSPR is a Rust library for encoding a callsign, a four character Maidenhead
 grid square, and a power level (in dBm) into the 162 symbols needed for a WSPR
@@ -9,7 +9,11 @@ Each tone is separated by 1.464Hz and is 683ms in length.
 
 Only Type 1 WSPR messages are supported.
 
-# Example
+### no_std
+
+The WSPR crate is `no_std` by default.
+
+### Example
 
 ```rust
 
