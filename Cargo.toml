@@ -2,8 +2,12 @@
 name = "wspr"
 version = "0.1.0"
 authors = ["Jeff Hlywa <jhlywa@gmail.com>"]
+description = "WSPR encoder"
+keywords = ["amateur-radio", "wspr", "no_std", "embedded"]
+repository = "https://github.com/jhlywa/wspr"
 edition = "2021"
 license = "MIT"
+readme = "README.md"
 
 
 [features]
