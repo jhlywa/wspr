@@ -2,10 +2,10 @@
 
 #![no_std]
 
-#[cfg(feature = "defmt-03")]
+#[cfg(feature = "defmt")]
 use defmt;
 
-#[cfg_attr(feature = "defmt-03", derive(defmt::Format))]
+#[cfg_attr(feature = "defmt", derive(defmt::Format))]
 #[derive(Debug, PartialEq)]
 pub enum Error {
     InvalidPower,

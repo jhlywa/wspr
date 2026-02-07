@@ -11,7 +11,8 @@ readme = "README.md"
 
 
 [features]
-defmt-03 = ["dep:defmt"]
+defmt = ["dep:defmt"]
 
 [dependencies]
-defmt = { version = "0.3", optional = true }
+defmt = { version = "1", optional = true }
+
