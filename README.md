@@ -16,7 +16,8 @@ The `wspr` crate is `no_std` by default.
 ### Optional Features
 
 The `wspr` crate provides the following optional Cargo features:
-  - `defmt-03`: Implements `defmt::Format` for `wspr::Error`
+
+- `defmt`: Implements `defmt::Format` for `wspr::Error`
 
 ### Example
 
@@ -29,13 +30,16 @@ if let Ok(symbols) = wspr::encode("KA1BCD", "FM17", 37) {
     // WSPR transmit frequencies are 1.5KHz above the dial frequency
     let offset = 1.5;
 
+    // Tone spacing in KHz
+    let spacing = 0.001464;
+
     for symbol in symbols.iter() {
-        let frequency = dial + offset + (0.001464 * symbol);
+        let frequency = dial + offset + (spacing * symbol as f32);
         // A notional WSPR transmission
         // set_frequency(frequency);
-        // enable_tx();
+        // key_down()
         // sleep_ms(683);
     }
-    // disable_tx();
+    // key_up();
 }
 ```
