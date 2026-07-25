@@ -15,7 +15,3 @@ defmt = ["dep:defmt"]
 
 [dependencies]
 defmt = { version = "1", optional = true }
-
-[[bin]]
-name = "wspr"
-path = "src/bin/main.rs"
